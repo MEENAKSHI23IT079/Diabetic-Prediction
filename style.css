@@ -1,0 +1,65 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4; /* Light gray background for contrast */
+}
+
+/* Span styling for emphasis */
+span {
+    color: #e74c3c; /* Vibrant red color */
+}
+
+/* Wrapper styling for center alignment and aesthetics */
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background: skyblue; /* Sky blue background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    max-width: 400px; /* Constrain width for better readability */
+    width: 100%;
+    text-align: center;
+}
+
+/* Input field styling */
+input {
+    outline: none;
+    border: 1px solid #ddd; /* Light gray border for contrast */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    margin-bottom: 20px; /* Space between inputs */
+}
+
+/* Button styling */
+button {
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid #ff7f50; /* Coral color border */
+    background: #ff7f50; /* Coral color background */
+    border-radius: 5px; /* Rounded corners */
+    display: block;
+    margin: 20px auto 0; /* Center the button and add margin on top */
+    cursor: pointer;
+    font-size: 16px; /* Slightly larger text */
+    transition: background 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Button hover effect */
+button:hover {
+    background: white;
+    color: #ff7f50;
+    border-color: #ff7f50;
+}
+
+/* Button active effect */
+button:active {
+    background: #ff6347; /* Slightly darker coral */
+}

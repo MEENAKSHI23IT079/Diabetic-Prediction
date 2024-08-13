@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Health System for Diabetes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('diabg.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .hero .cta-buttons a {
+            background-color: #ff7f50;
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .features, .testimonials, .compatibility, .blog {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .features h2, .testimonials h2, .compatibility h2, .blog h2 {
+            margin-bottom: 30px;
+        }
+        .features .feature-item, .testimonials .testimonial-item, .compatibility .device-item, .blog .article-item {
+            margin-bottom: 30px;
+        }
+        .features .feature-item, .compatibility .device-item {
+            display: inline-block;
+            width: 23%;
+            margin: 0 1%;
+        }
+        .testimonial-item {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #ff7f50;
+            text-decoration: none;
+        }
+        .footer .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+        a {
+            color: black;
+        }
+        .features {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .features .feature-item {
+            display: inline-block;
+            width: 23%;
+            margin: 0 1%;
+            vertical-align: top;
+        }
+        .features .feature-item img {
+            width: 300px;
+            height: 250px;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+        .features .feature-item h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .features .feature-item p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Smart Health System</h1>
+        </div>
+        
+            <a href="homepage.html">Home</a>
+            <a href="features.html">Features</a>
+            <a href="#" onclick="openChatbot()">Chatbot</a>
+            <a href="loginpage.html">Login/Sign Up</a>
+        
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Empowering You to Manage Diabetes Effectively</h1>
+        <p>Monitor your glucose levels, track your diet, and stay in control with our smart tools designed for managing diabetes.</p>
+        <div class="cta-buttons">
+            <a href="http://localhost:8501/">Get Started</a>
+            <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="feature-item">
+            <img src="glucose.jpg" alt="Glucose Monitoring">
+            <h3><a href="monitoring.html">Real-Time Glucose Monitoring</a></h3>
+            <p>Track your blood sugar levels with ease.</p>
+        </div>
+        <div class="feature-item">
+            <img src="bmi.jpg" alt="BMI Calculator">
+            <h3><a href="bmi.html">BMI Calculator</a></h3>
+            <p>Monitor your BMI level and its effects on your glucose.</p>
+        </div>
+        <div class="feature-item">
+            <img src="medication.jpg" alt="Medication Reminders">
+            <h3><a href="medication.html">Medication Reminders</a></h3>
+            <p>Never miss a dose with timely alerts.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>"Health is wealth"</h2>
+        <div class="testimonial-item">
+            <p>"A healthy outside starts from the inside."</p>
+            <p>— Robert Urich</p>
+        </div>
+        <div class="testimonial-item">
+            <p>"To keep the body in good health is a duty, otherwise we shall not be able to keep our mind strong and clear."</p>
+            <p>— Buddha</p>
+        </div>
+    </section>
+
+    <!-- Compatibility Section -->
+    <section class="compatibility">
+        <h2>Integration and Compatibility</h2>
+        <div class="device-item">
+            <img src="android.jpg" alt="Device 1">
+            <p>Works with Android</p>
+        </div>
+        <div class="device-item">
+            <img src="ios.jpg" alt="Device 2">
+            <p>Compatible with iOS</p>
+        </div>
+        <div class="device-item">
+            <img src="cgm.jpg" alt="Device 3">
+            <p>Supports CGM Devices</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <h2>Recommended</h2>
+        <div class="article-item">
+            <h3>Prevention and treatment</h3>
+            <p>Prevention and treatment methods extracted from WHO (World Health Organization)</p>
+            <a href="Prevention and treatment.html">Read More</a>
+        </div>
+        <div class="article-item">
+            <h3>Symptoms</h3>
+            <p>Symptoms of diabetes report extracted from WHO (World Health Organization)</p>
+            <a href="Symptoms.html">Read More</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="quick-links">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Contact Us</a> | 
+            <a href="#">FAQs</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="fb.jpg" alt="Facebook"></a>
+            <a href="#"><img src="twitter.jpg" alt="Twitter"></a>
+            <a href="#"><img src="insta.jpg" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth Scroll for navigation links
+        document.querySelectorAll('header nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Testimonials - Carousel functionality
+        const testimonials = document.querySelectorAll('.testimonial-item');
+        let currentTestimonial = 0;
+
+        function showTestimonial(index) {
+            testimonials.forEach((item, i) => {
+                item.style.display = (i === index) ? 'block' : 'none';
+            });
+        }
+
+        function nextTestimonial() {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }
+
+        setInterval(nextTestimonial, 5000); // Change testimonial every 5 seconds
+
+        // Newsletter Signup Alert
+        const subscribeButton = document.querySelector('.newsletter-signup button');
+        subscribeButton.addEventListener('click', () => {
+            const emailInput = document.querySelector('.newsletter-signup input[type="email"]');
+            if (emailInput.value) {
+                alert(`Thank you for subscribing with ${emailInput.value}!`);
+                emailInput.value = ''; // Clear input field
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+
+        // Chatbot Functionality
+        function openChatbot() {
+            if (window.Chatbase) {
+                window.Chatbase.open(); // Replace with actual function if provided
+            }
+        }
+
+        window.embeddedChatbotConfig = {
+            chatbotId: "EwbWRJscUGTwMrsHGL23m",
+            domain: "www.chatbase.co"
+        };
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="EwbWRJscUGTwMrsHGL23m"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+
+</body>
+</html>
